@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Charles Awuku" />
+    <meta name="description"
+        content="With over 8+ years of experience in software development, I've evolved into a dynamic web developer, UX/UI designer, and mobile app developer. My achievements include actively contributing to the development of websites and apps for diverse clients. Beyond projects, I've made an impact by providing effective online coding tutoring." />
+    <meta name="Charles Awuku"
+        content="With over 8+ years of experience in software development, I've evolved into a dynamic web developer, UX/UI designer, and mobile app developer. My achievements include actively contributing to the development of websites and apps for diverse clients. Beyond projects, I've made an impact by providing effective online coding tutoring." />
+
+    <!-- Title  -->
+    <title>Charles Awuku</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "BAT8yDzMYU8atUDei",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_mayzec6', 'template_ndlid5s', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        var modal = document.getElementById("myModal");
+                        modal.style.display = "block";
+                        // Refresh the page after 3 seconds
+                        document.getElementById("contact-form").reset();
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- =====================================
+    	==== Start Loading -->
+    <div class="loading">
+        <div class="text-center middle">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Loading ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="#">Awuku Charles</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="2">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://apprenticelabgh.com/">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Header -->
+    <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="images/bg3.jpg"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="vertical-center full-width text-center caption">
+                    <h2>I Love To Code</h2>
+                    <h1 class="cd-headline clip">
+                        <span class="blc">I Am </span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Charles Awuku</b>
+                            <b>a Developer</b>
+                            <b>a Designer</b>
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <a href="#" data-scroll-nav="1">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+    <!-- End Header ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Hero -->
+    <section class="hero section-padding" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="hero-img mb-md50">
+                        <img src="images/bg.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="content">
+                        <h4 class="title title-left">I Am Full stack Developer</h4>
+                        <p>I am <span>Charles Awuku</span> With over 8+ years of experience in software development,
+                            I've evolved into a dynamic web developer, UX/UI designer, and mobile app developer. My
+                            achievements include actively contributing to the development of websites and apps for
+                            diverse clients. Beyond projects, I've made an impact by providing effective online coding
+                            tutoring.</p>
+                        <p> With a passion for merging creativity and technology, I continually seek innovative
+                            solutions that elevate user experiences. Let's connect to explore the realm of endless
+                            possibilities in web and app development together..</p>
+
+                        <div class="social-icon">
+                            <a href="https://web.facebook.com/charles.awuku.902/"  target="_blank">
+                                <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a href="https://twitter.com/AwukuCharles6"  target="_blank">
+                                <span class="icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/charles-awuku-385b93242" target="_blank">
+                                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            </a>
+                            <a href="https://github.com/Barrister1990" target="_blank">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                            </a>
+                        </div>
+
+                        <span class="buton text-center">
+                            <a href="https://wa.me/+14696041967" target="_blank" front="Hire Me" back="&#xf1d8;"></a>
+                        </span>
+                        <span class="buton buton-bord text-center">
+                            <a href="CV.pdf" front="Download C.V" back="&#xf019;" download="CV.pdf"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Resume -->
+    <section class="resume bg-img" data-overlay-dark="8" data-background="images/b5.jpg" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-pencil"></span><br>
+                        <h5 class="title title-left">Education</h5>
+                        <ul>
+                            <li>
+                                <h6>University of Education, Winneba</h6>
+                                <p>Bachelor of Education Mathematics and I.C.T</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-briefcase"></span><br>
+                        <h5 class="title title-left">Experience</h5>
+                        <ul>
+                            <li>
+                                <h6>Co-founder</h6>
+                                <p>Apprentice Lab</p>
+                            </li>
+                            <li>
+                                <h6>Full Stack Developer</h6>
+                                <p>Apprentice Lab</p>
+                            </li>
+                            <li>
+                                <h6>Lead Intructor</h6>
+                                <p>Apprentice Lab</p>
+                            </li>
+                            <li>
+                                <h6>UX/ UI Designer</h6>
+                                <p>Freelance</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item skills">
+                        <span class="icon icon-layers"></span><br>
+                        <h5 class="title title-left">My Skills</h5>
+
+                        <div class="skill">
+                            <h6>Web Development <span>95%</span></h6>
+                            <div class="skills-progress"><span data-value='90%'></span></div>
+                        </div>
+                        <div class="skill">
+                            <h6>Development <span>80%</span></h6>
+                            <div class="skills-progress"><span data-value='80%'></span></div>
+                        </div>
+                        <div class="skill">
+                            <h6>Mobile App <span>95%</span></h6>
+                            <div class="skills-progress"><span data-value='85%'></span></div>
+                        </div>
+                        <div class="skill">
+                            <h6>Marketing <span>75%</span></h6>
+                            <div class="skills-progress"><span data-value='75%'></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Resume ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Services -->
+    <section class="services section-padding" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+
+                <div class="section-head full-width">
+                    <h4 class="title">My Services</h4>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-laptop"></span>
+                        <h6>Web Design</h6>
+                        <p>I create modern, responsive websites that blend clean design with seamless functionality,
+                            delivering user-friendly experiences tailored to your brand</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 active bolt">
+                    <div class="item mb-md50">
+                        <span class="icon icon-layers"></span>
+                        <h6>Development</h6>
+                        <p>I develop custom software solutions that are efficient, scalable, and tailored to meet your
+                            specific business needs, ensuring smooth functionality and optimal performance</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-phone"></span>
+                        <h6>Mobile App</h6>
+                        <p>I build intuitive, high-performance mobile apps tailored to your business, delivering
+                            seamless user experiences across both iOS and Android platforms.</p>
+                    </div>
+                </div>
+                <div class="bord full-width"></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-shield"></span>
+                        <h6>Clean Code</h6>
+                        <p>I write clean, well-structured code that is easy to maintain, scalable, and optimized for
+                            performance, ensuring long-term reliability for your projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 active">
+                    <div class="item mb-sm50">
+                        <span class="icon icon-mobile"></span>
+                        <h6>Fully Responsive</h6>
+                        <p>I design and develop fully responsive websites and apps that adapt flawlessly to any device,
+                            providing a seamless user experience across desktops, tablets, and smartphones.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon icon-gears"></span>
+                        <h6>Custom Support</h6>
+                        <p>I offer dedicated custom support to ensure your software and apps run smoothly, with timely
+                            assistance tailored to your specific needs and ongoing project updates.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Services ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Numbers -->
+    <div class="numbers bg-img" data-stellar-background-ratio="0.5" data-overlay-dark="8"
+        data-background="images/b3.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-happy"></span>
+
+                        <h2 class="count">90</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item mb-md50">
+                        <span class="icon icon-layers"></span>
+                        <h2 class="count">50</h2>
+                        <p>Projects Complated</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item mb-sm50">
+                        <span class="icon icon-download"></span>
+                        <h2 class="count">10</h2>
+                        <p>Files Downloaded</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <span class="icon icon-pencil"></span>
+                        <h2 class="count">6350</h2>
+                        <p>Lines Of Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Numbers ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Portfolio -->
+    <section class="portfolio section-padding" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Section-Head -->
+                <div class="section-head full-width">
+                    <h4 class="title">My Portfolio</h4>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- filter links -->
+                <div class="filtering text-center mb-50">
+                    <span data-filter='*' class="active">All</span>
+                    <span data-filter='.brand'>websites</span>
+                    <span data-filter='.web'>Mobile Applications</span>
+                    <span data-filter='.graphic'>Web Applications</span>
+                </div>
+
+                <!-- gallery -->
+                <div class="gallery full-width">
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items graphic">
+                        <div class="item-img">
+                            <img src="images/Home.png" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                   <a href="#0"> <h6>Quizzy</h6> </a>
+                                    <h5>An online Quiz platform with reward</h5>
+                                </div>
+                                <a href="images/Home.png" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items web">
+                        <div class="item-img">
+                            <img src="images/Worker.png" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                    <h6>Ree service app</h6>
+                                    <h5> Ree service app your go-to app for all your personal service needs!</h5>
+                                </div>
+                                <a href="images/Worker.png" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items graphic">
+                        <div class="item-img">
+                            <img src="images/hohoe.png" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                    <h6>School management system</h6>
+                                    <h5>This system streamlines school operations, enhances student and teacher interactions, and simplifies administrative tasks</h5>
+                                </div>
+                                <a href="images/hohoe.png" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items web">
+                        <div class="item-img">
+                            <img src="images/Welcom.png" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                   <a href="https://play.google.com/store/apps/details?id=com.barrister1990.joymish&pcampaignid=web_share"> <h6>Joymish</h6> </a>
+                                    <h5>Joymish is a mobile app that connects you directly with skilled freelance professionals in your area.</h5>
+                                </div>
+                                <a href="images/Welcom.png" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items brand">
+                        <div class="item-img">
+                            <img src="images/Love.PNG" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                    <h6>Design . Motion</h6>
+                                    <h5>Crearive Design</h5>
+                                </div>
+                                <a href="images/Love.PNG" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items brand">
+                        <div class="item-img">
+                            <img src="images/drum.PNG" alt="image">
+                            <div class="item-img-overlay text-center valign">
+                                <div class="overlay-info vertical-center full-width">
+                                    <h6>Design . Motion</h6>
+                                    <h5>Crearive Design</h5>
+                                </div>
+                                <a href="images/drum.PNG" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Testimonails -->
+    <section class="testimonials section-padding bg-img" data-overlay-dark="8" data-background="images/b6.jpg"
+        data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Section-Head -->
+                <div class="section-head full-width mb-50">
+                    <span class="icon icon-quote"></span><br>
+                    <h4 class="title">Testimonials</h4>
+                </div>
+
+                <div class="offset-md-1 col-md-10">
+                    <div class="owl-carousel owl-theme text-center">
+                        <div class="citem">
+                            <p>As the co-founder, full-stack developer, and coding instructor at Apprentice Lab, Charles
+                                Awuku demonstrates exceptional leadership, technical expertise, and a commitment to
+                                mentoring others. He effectively balance business growth with hands-on development,
+                                consistently delivering high-quality results. Highly recommended for his remarkable
+                                contributions and leadership.</p>
+                            <h5>Derick Yeboah</h5>
+                            <h6>Founder Of Apprentice Lab</h6>
+                        </div>
+                        <div class="citem">
+                            <p>Charles Awuku is an outstanding coding instructor who has greatly impacted my learning
+                                experience. Their deep knowledge of software development and ability to explain complex
+                                concepts in a clear, understandable way made a huge difference in my progress. He is
+                                patient, supportive, and always willing to help, creating a positive and encouraging
+                                learning environment. I highly recommend Charles for their exceptional teaching and
+                                technical expertise.</p>
+                            <h5>Hoffman Agyei</h5>
+                            <h6>Vienna, Austria</h6>
+                        </div>
+                        <div class="citem">
+                            <p>Charles Awuku developed an exceptional application for my business, delivering exactly
+                                what I needed with great attention to detail. He understood my requirements perfectly
+                                and translated them into a user-friendly, high-performance app. Throughout the project,
+                                Charles was professional, communicative, and committed to delivering quality work on
+                                time. I highly recommend him for anyone looking for a reliable and skilled developer.
+                            </p>
+                            <h5>Janet Okra</h5>
+                            <h6>Denton, Texas</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonails ====
+    	======================================= -->
+
+
+
+    <!-- =====================================
+    	==== Start Contact -->
+    <section class="contact section-padding bg-img" data-overlay-dark="8" data-background="images/b5.jpg"
+        data-scroll-index="6">
+        <div class="container">
+            <div class="row">
+
+                <!-- Section-Head -->
+                <div class="section-head full-width mb-50">
+                    <h4 class="title">Get In Touch</h4>
+                </div>
+
+                <form class="form full-width" id="contact-form" method="post" action="contact.php">
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" placeholder="Name *"
+                                        required="required">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" placeholder="Email *"
+                                        required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" placeholder="Your Message *" rows="4"
+                                        required="required"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <span class="buton buton-lg">
+                                        <button type="submit" front="Send Message" back="&#xf35d;"></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info full-width">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item mb-sm50">
+                                <span class="icon icon-mobile"></span>
+                                <div class="cont">
+                                    <h6>Phone</h6>
+                                    <p>+1 (469) 604-1967</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mb-sm50">
+                                <span class="icon icon-envelope"></span>
+                                <div class="cont">
+                                    <h6>Email</h6>
+                                    <p>charlesawuku2010@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <span class="icon icon-map-pin"></span>
+                                <div class="cont">
+                                    <h6>Address</h6>
+                                    <p>5570 FM 423 Suit 250, Frisco, TX 75036</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact ====
+    	======================================= -->
+
+
+    <!-- =====================================
+    	==== Start Footer -->
+    <footer class="footer">
+        <p>Copyright &copy; Awuku Charles All Rights Reserved.</p>
+    </footer>
+    <!-- End Footer ====
+    	======================================= -->
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- animated.headline -->
+    <script src="js/animated.headline.js"></script>
+
+    <!-- jquery.waypoints.min -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
